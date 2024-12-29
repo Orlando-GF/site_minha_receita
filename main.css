@@ -150,12 +150,76 @@ header nav ul li a {
 
 /*FOOTER*/
 footer {
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 20px;
-    color: var(--background-color);
-    font-size: 20px;
+    background-color: var(--secundary-color);
+    padding-top: 10px;
+    color: var(--text-color);
     margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    border-bottom: 1px solid var(--secundary-color);
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fb6065b2;
+}
+
+input:focus, textarea:focus {
+    outline-color: var(--primary-color);
+}
+.footer-contact {
+    width: 40%;
+}
+
+.footer-about {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.footer-contact h2 {
+    margin-bottom: 10px;
+}
+
+.footer-about h2 {
+    margin-bottom: 30px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    font-family: var(--font-secundary);
+    line-height: 20px;
+    margin-bottom: 10px;    
+}
+
+.copy-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
 }
 
 
@@ -184,5 +248,15 @@ footer {
 
     .recipe-card h3 {
         font-size: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-contact,
+    .footer-about {
+        width: 100%;
+        padding-left: 0;
     }
 }
